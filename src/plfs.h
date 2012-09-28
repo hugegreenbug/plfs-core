@@ -119,7 +119,7 @@ typedef void *Plfs_fd;
     int plfs_getxattr(Plfs_fd *fd, void *value, const char *key, size_t len); 
 
     /* Set the exteded attribute */ 
-    int plfs_setxattr(Plfs_fd *fd, const void *value, const char *key);
+    int plfs_setxattr(Plfs_fd *fd, const void *value, const char *key, size_t len);
 
     /* Index stream related functions */
     int plfs_index_stream(Plfs_fd **pfd, char **buffer);
